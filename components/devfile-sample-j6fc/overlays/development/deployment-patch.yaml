@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-j6fc
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr714-0075-0005-tenant/tkrw-pr714-0075-0005-app/devfile-sample-j6fc@sha256:e401e5acb6b0c0f3f076c2e19a32e8a93fa72914f7a6d01a9b57325151b839c4
+        name: my-nodejs
+        resources: {}
+status: {}
